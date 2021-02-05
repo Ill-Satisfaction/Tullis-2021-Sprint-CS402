@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:editable="true"
+        android:fontFamily="serif-monospace"
+        android:padding="18dp"
+        android:text="Item Name"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/swt_carried"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="carried"
+        app:layout_constraintEnd_toStartOf="@+id/swt_equipped"
+        app:layout_constraintStart_toEndOf="@+id/swt_quick_access"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_name" />
+
+    <Switch
+        android:id="@+id/swt_quick_access"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="quick access"
+        app:layout_constraintBottom_toBottomOf="@+id/swt_carried"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/swt_equipped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="equipped"
+        app:layout_constraintBottom_toBottomOf="@+id/swt_carried"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/quantDownBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_quantity"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_quantity"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_quantity"
+        app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <ImageButton
+        android:id="@+id/quantUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_quantity"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_quantity"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_quantity"
+        app:srcCompat="@drawable/ic_baseline_arrow_drop_up_24" />
+
+    <TextView
+        android:id="@+id/tv_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:text="0"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="description"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swt_carried" />
+
+    <EditText
+        android:id="@+id/et_notes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="notes"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
