@@ -10,6 +10,16 @@ On startup, an API call is made to a server that holds some example tidbits. The
 
 **Overview video link**: https://youtu.be/rz-k_Wpx0Jc
 
+walkthrough of implemented features:
+
+<img src='todomk2.gif' title='' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+screenshot of database environment:
+
+<img src='back4app_tidbits_database.PNG' title='' alt='database sheet showing two entries, named Task 1 and Task 2' />
+
 ## Features
 
 ### Required features:
