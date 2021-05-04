@@ -1,0 +1,11 @@
+<resources>
+    <string name="placeholder">Lorem Ipsum</string>
+
+    <string name="app_name">TodoMkVI</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="addtidbit_title">Add New Tidbit</string>
+    <string name="addtidbit_field_1">Tidibit Title</string>
+    <string name="addtidbit_field_2">Description (optional)</string>
+</resources>
