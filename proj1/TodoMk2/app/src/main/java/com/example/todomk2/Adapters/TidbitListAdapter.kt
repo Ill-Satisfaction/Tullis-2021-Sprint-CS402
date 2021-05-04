@@ -19,6 +19,7 @@ class TidbitListAdapter (   val tidbits :ArrayList<TidbitModel>)
                         :RecyclerView.Adapter<TidbitListAdapter.ViewHolder>() {
 
     abstract class ViewHolder (itemView : View) :RecyclerView.ViewHolder(itemView) {
+
         open fun bind (tb :TidbitModel) {
             itemView.setOnClickListener {
                 EventBus.getDefault().post(MoveTidbitEvent(adapterPosition))
@@ -30,7 +31,6 @@ class TidbitListAdapter (   val tidbits :ArrayList<TidbitModel>)
             }
         }
     }
-
     class ShorttextViewHolder (itemView: View) :ViewHolder(itemView) {
         override fun bind (tb :TidbitModel) {
             super.bind(tb)
