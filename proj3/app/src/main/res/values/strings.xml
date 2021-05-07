@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TodoMKvii</string>
+
+    <!--general-->
+    <string name="error">{error:incorrect value}</string>
+    <string name="placeholder">lorem ipsum dolor sit amet ensecudor salet amet.</string>
+    <string name="save">save</string>
+    <string name="delete">delete</string>
+    <string name="back">back</string>
+
+    <!--main activity-->
+    <string name="tab_text_1">index</string>
+    <string name="tab_text_2">current</string>
+    <string name="tab_text_3">backlog</string>
+
+    <!--view tidbit activity-->
+    <string name="title_hint">title</string>
+
+</resources>
