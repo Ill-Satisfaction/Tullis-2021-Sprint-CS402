@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TodoMKvii</string>
+
+    <!--general-->
+    <string name="error">{error:incorrect value}</string>
+    <string name="placeholder">lorem ipsum dolor sit amet ensecudor salet amet.</string>
+    <string name="save">save</string>
+    <string name="delete">delete</string>
+    <string name="back">back</string>
+
+    <!--main activity-->
+    <string name="tab_text_1">index</string>
+    <string name="tab_text_2">current</string>
+    <string name="tab_text_3">backlog</string>
+
+    <!--view tidbit activity-->
+    <string name="title_hint">title</string>
+
+    <!--new entry activity-->
+    <string name="new_entry_title">put a clear title here</string>
+    <string name="new_entry_content_text">here you can go more in-depth</string>
+    <string name="collection">new tidbit collection</string>
+    <string-array name="new_entry_types">
+        <item>text</item>
+        <item>image</item>
+        <item>voice</item>
+        <item>collection</item>
+    </string-array>
+
+</resources>
