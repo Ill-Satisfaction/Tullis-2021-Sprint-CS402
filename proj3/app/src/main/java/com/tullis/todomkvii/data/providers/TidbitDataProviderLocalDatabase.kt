@@ -16,11 +16,17 @@ interface TidbitDataProviderLocalDatabase {
     @Query ("SELECT * FROM tidbit WHERE collectionId = (:tagID)")
     fun getAllWithTagID(tagID: Long): List<Tidbit>
 
+    @Query("UPDATE tidbit SET collectionId = :cId WHERE tidbitId =:tId")
+    fun updateCollectionID (tId:Long, cId:Long)
+
     @Insert
     fun insertAll(vararg tidbits: Tidbit)
 
     @Delete
     fun delete(tidbit: Tidbit)
+
+    @Query("DELETE FROM tidbit WHERE tidbitId = :id")
+    fun deleteById(id: Long)
 
 
 }

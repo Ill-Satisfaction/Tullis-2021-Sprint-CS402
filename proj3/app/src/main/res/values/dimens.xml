@@ -9,4 +9,6 @@
 
     <dimen name="rv_item_text_title_size">16sp</dimen>
     <dimen name="rv_item_padding">8dp</dimen>
+
+    <dimen name="expanded_text_body_size">16sp</dimen>
 </resources>

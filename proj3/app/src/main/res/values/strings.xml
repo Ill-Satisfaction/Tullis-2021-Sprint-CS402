@@ -16,4 +16,15 @@
     <!--view tidbit activity-->
     <string name="title_hint">title</string>
 
+    <!--new entry activity-->
+    <string name="new_entry_title">put a clear title here</string>
+    <string name="new_entry_content_text">here you can go more in-depth</string>
+    <string name="collection">new tidbit collection</string>
+    <string-array name="new_entry_types">
+        <item>text</item>
+        <item>image</item>
+        <item>voice</item>
+        <item>collection</item>
+    </string-array>
+
 </resources>

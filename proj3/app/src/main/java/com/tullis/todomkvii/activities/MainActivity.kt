@@ -1,9 +1,9 @@
-package com.tullis.todomkvii
+package com.tullis.todomkvii.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayout
 import androidx.viewpager.widget.ViewPager
 import androidx.appcompat.app.AppCompatActivity
@@ -11,11 +11,12 @@ import androidx.fragment.app.Fragment
 import com.tullis.todomkvii.R
 import com.tullis.todomkvii.activities.main.TabsPagerAdapter
 import com.tullis.todomkvii.activities.main.fragments.BacklogFragment
-import com.tullis.todomkvii.data.models.Tidbit
+import com.tullis.todomkvii.activities.main.fragments.CurrentFragment
 import com.tullis.todomkvii.data.repos.TidbitRepo
 import com.tullis.todomkvii.events.GoToViewTidbitActivityEvent
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,19 +35,18 @@ class MainActivity : AppCompatActivity() {
         // setup activity layout
         val sections :Array<Fragment> = arrayOf (
             Fragment(),
-            Fragment(),
+            CurrentFragment(),
             BacklogFragment ()
         )
 
         val viewPager: ViewPager = findViewById(R.id.view_pager)
         val tabs: TabLayout = findViewById(R.id.tabs)
 
-        viewPager.adapter =
-            TabsPagerAdapter(
-                sections,
-                this,
-                supportFragmentManager
-            )
+        viewPager.adapter = TabsPagerAdapter (
+            sections,
+            this,
+            supportFragmentManager
+        )
         tabs.setupWithViewPager(viewPager)
 
         // setup fab
@@ -65,6 +65,10 @@ class MainActivity : AppCompatActivity() {
     fun launchViewTidbitActivity (e:GoToViewTidbitActivityEvent) {
         val i = Intent(this, ViewTidbitActivity::class.java)
         i.putExtra ("tidbit", e.tidbit)
+
+        println ("asdf tidbit " + e.tidbit.toString())
+
         startActivity( i )
+
     }
 }

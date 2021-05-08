@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewTidbitActivity">
+    tools:context=".activities.ViewTidbitActivity">
 
     <FrameLayout
         android:id="@+id/container"
@@ -13,7 +13,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_viewtidbit_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_viewtidbit_title">
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
 
     </FrameLayout>
 
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/container" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_viewtidbit_title" />
 
     <TextView
         android:id="@+id/tv_viewtidbit_title"
@@ -41,15 +41,15 @@
         android:id="@+id/btn_viewtidbit_trash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_delete_24" />
 
     <Button
         android:id="@+id/btn_viewtidbit_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="back"
+        android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

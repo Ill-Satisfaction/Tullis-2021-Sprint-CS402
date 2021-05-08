@@ -1,4 +1,4 @@
-package com.tullis.todomkvii.activities.viewtidbit
+package com.tullis.todomkvii.activities.viewtidbit.fragments
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.tullis.todomkvii.R
+import com.tullis.todomkvii.activities.viewtidbit.MainViewModel
 
 class ViewTidbitFragment : Fragment() {
 

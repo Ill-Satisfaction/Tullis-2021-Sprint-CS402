@@ -27,8 +27,17 @@ data class Tidbit (
     @ColumnInfo(name = "content") val content :String?
 ) :Serializable {
     //  CONSTRUCTORS
-      constructor(title:String) :this (
+    constructor(title:String) :this (
         TodoApplication.AUTO_INCREMENT,
-        TodoApplication.backlogID, title,
-        ContentType.BASIC, null)
+        TodoApplication.backlogID,
+        title, ContentType.BASIC,
+        null
+    )
+
+    constructor(title:String, ctype:ContentType, content:String) :this (
+        TodoApplication.AUTO_INCREMENT,
+        TodoApplication.backlogID,
+        title, ctype,
+        content
+    )
 }

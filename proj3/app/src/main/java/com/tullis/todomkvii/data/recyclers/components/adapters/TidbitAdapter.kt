@@ -8,6 +8,7 @@ import com.tullis.todomkvii.data.models.ContentType
 import com.tullis.todomkvii.data.models.Tidbit
 import com.tullis.todomkvii.data.recyclers.components.viewholders.TidbitViewHolder
 import com.tullis.todomkvii.data.recyclers.components.viewholders.TidbitViewHolderBasic
+import com.tullis.todomkvii.data.recyclers.components.viewholders.TidbitViewHolderImage
 
 class TidbitAdapter (val tidbits:ArrayList<Tidbit>) :RecyclerView.Adapter<TidbitViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TidbitViewHolder {
@@ -15,6 +16,14 @@ class TidbitAdapter (val tidbits:ArrayList<Tidbit>) :RecyclerView.Adapter<Tidbit
             ContentType.BASIC.value -> TidbitViewHolderBasic(
                 LayoutInflater.from(parent.context)
                     .inflate(R.layout.rvcard_tidbit_basic, parent, false)
+            )
+            ContentType.TEXT.value -> TidbitViewHolderBasic(
+                LayoutInflater.from(parent.context)
+                    .inflate(R.layout.rvcard_tidbit_basic, parent, false)
+            )
+            ContentType.IMAGE.value ->TidbitViewHolderImage(
+                LayoutInflater.from(parent.context)
+                    .inflate(R.layout.rvcard_tidbit_image, parent, false)
             )
             else -> TidbitViewHolder(
                 LayoutInflater.from(parent.context)

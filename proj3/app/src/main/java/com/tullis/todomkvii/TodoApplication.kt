@@ -14,8 +14,9 @@ import com.tullis.todomkvii.data.repos.TidbitRepo
 class TodoApplication : Application() {
 
     companion object {
-        val AUTO_INCREMENT :Long = 0;
-        var backlogID :Long = 0;
+        val AUTO_INCREMENT :Long = 0
+        var backlogID :Long = 0
+        var currentID :Long = 1
 
         lateinit var db :AppDatabase
     }
