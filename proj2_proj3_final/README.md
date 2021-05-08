@@ -8,7 +8,8 @@ Items are loaded from the device's local database, and are saved into it automat
 
 **Author**: Akiah Tullis
 
-**Overview video link**: to be added
+**Overview video link**: 
+https://youtu.be/KbNqjLZkwnA
 
 walkthrough of implemented features:
 
