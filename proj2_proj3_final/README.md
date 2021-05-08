@@ -11,13 +11,6 @@ Items are loaded from the device's local database, and are saved into it automat
 **Overview video link**: 
 https://youtu.be/KbNqjLZkwnA
 
-walkthrough of implemented features:
-
-<img src='todomk2.gif' title='' width='' alt='Video Walkthrough' /> // not current yet
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-
 ## Features / Description
 
 * [x] **Design Patterns** - Implement the Singleton, Repository, Observer Patterns
